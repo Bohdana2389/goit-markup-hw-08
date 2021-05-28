@@ -6,11 +6,21 @@
   
   .clients-icons {
     display: inline-flex;
+    flex-wrap: wrap;
+
   }
   
   .clients-icons__item:not(:last-child) {
     margin-right: 30px;
   }
+
+  .clients-icons__item{
+    @media screen and (max-width: 767px) {
+      margin-bottom:30px;
+    }
+    
+  }
+
   
   .clients-icons__link {
     display: flex;

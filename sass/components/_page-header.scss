@@ -16,8 +16,27 @@
     border-bottom: 1px solid #ececec;
   }
   
+ .page-header__button{
+   display: inline-flex;
+   margin: 0;
+   padding: 0;
+   border: none;
+   background-color: transparent;
  
   
+  &.is-open .page-header__icon-cross{
+    display: block;
+  }
+ 
+   &.is-open .page-header__icon-menu{
+  display: none;
+ }
+
+ & .page-header__icon-cross{
+  display: none;
+}
+ }
+
   .head {
     font-family: var(--main-font);
     font-weight: 500;
@@ -26,6 +45,7 @@
     letter-spacing: 0.02em;
     color: var(--alt-text-color);
   }
+  
   .head .link .menu__item--current {
     color: var(--accent-color);
   }

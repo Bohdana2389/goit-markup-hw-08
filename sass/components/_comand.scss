@@ -1,6 +1,11 @@
 
  .comand__item:not(:last-child) {
     margin-right: 30px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom:30px;
+    }
+    
    }
 
 
@@ -19,12 +24,15 @@
  
   .comand {
     display: flex;
-    font-family: var(--main-font) o;
+    flex-wrap: wrap;
+    font-family: var(--main-font);
     font-weight: normal;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+
+  
   }
   
